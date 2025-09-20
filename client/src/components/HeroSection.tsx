@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Sparkles, Star, Heart } from 'lucide-react';
-import heroBackground from '@assets/generated_images/magical_storybook_hero_background_e7f2c4b8.png';
+import heroBackground from '@assets/Generated Image September 20, 2025 - 1_43PM_1758358944488.png';
 import heroCharacter from '@assets/generated_images/hero_character_and_lion_27635e39.png';
 
 export default function HeroSection() {
@@ -35,20 +35,20 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 
-                className="text-4xl md:text-6xl lg:text-7xl font-heading text-primary leading-tight"
+                className="text-4xl md:text-6xl lg:text-7xl font-heading leading-tight"
                 data-testid="text-hero-headline"
               >
-                Your Child,
+                <span className="text-[#2B4C6F]">Your Child,</span>
                 <br />
-                <span className="text-accent">The Hero Of</span>
+                <span className="text-[#2B4C6F]">The Hero Of</span>
                 <br />
-                Their Own Story
+                <span className="text-[#2B4C6F]">Their Own Story</span>
               </h1>
               
               <p 
-                className="text-lg md:text-xl text-foreground/80 max-w-xl mx-auto lg:mx-0"
+                className="text-lg md:text-xl text-[#4A5D4A] max-w-xl mx-auto lg:mx-0 leading-relaxed"
                 data-testid="text-hero-description"
               >
                 Create magical personalized storybooks where your child becomes the star of their own adventure. Watch their face light up as they discover themselves in enchanting tales.
@@ -58,7 +58,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white font-semibold shadow-xl"
+                className="text-lg px-8 py-6 rounded-full bg-[#E17B47] hover:bg-[#D96B37] text-white font-semibold shadow-lg border-0"
                 onClick={handleCreateBook}
                 data-testid="button-create-book"
               >
@@ -69,7 +69,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-6 rounded-full border-2 bg-white/90 backdrop-blur-sm hover:bg-white"
+                className="text-lg px-8 py-6 rounded-full border-2 border-[#E17B47]/30 bg-white/90 backdrop-blur-sm hover:bg-white text-[#4A5D4A]"
                 data-testid="button-learn-more"
               >
                 Learn More

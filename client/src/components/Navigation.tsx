@@ -14,11 +14,11 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-4xl px-4">
-      <div className="bg-background/80 backdrop-blur-md rounded-full border border-border/50 shadow-lg px-6 py-3">
+      <div className="bg-[#F5F1E8]/90 backdrop-blur-md rounded-full border border-[#E5D5C8]/50 shadow-lg px-6 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-heading text-primary font-bold" data-testid="text-logo">
+            <div className="text-2xl font-heading text-[#E17B47] font-bold" data-testid="text-logo">
               Punchi Katha
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Navigation() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors hover-elevate px-3 py-2 rounded-full"
+                className="text-sm font-medium text-[#4A5D4A] hover:text-[#2B4C6F] transition-colors hover-elevate px-3 py-2 rounded-full"
                 data-testid={`link-${item.label.toLowerCase().replace(' ', '-')}`}
               >
                 {item.label}
@@ -57,7 +57,7 @@ export default function Navigation() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors hover-elevate px-3 py-2 rounded-lg"
+                  className="text-sm font-medium text-[#4A5D4A] hover:text-[#2B4C6F] transition-colors hover-elevate px-3 py-2 rounded-lg"
                   onClick={() => setIsMenuOpen(false)}
                   data-testid={`link-mobile-${item.label.toLowerCase().replace(' ', '-')}`}
                 >

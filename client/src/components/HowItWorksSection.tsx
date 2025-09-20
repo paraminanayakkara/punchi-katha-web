@@ -42,17 +42,17 @@ export default function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/10" id="how-it-works">
+    <section className="py-20 bg-gradient-to-b from-[#F8FBFA] to-[#F0F8F7]" id="how-it-works">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
-            className="text-4xl md:text-5xl font-heading text-primary mb-4"
+            className="text-4xl md:text-5xl font-heading text-[#2B4C6F] mb-4"
             data-testid="text-how-it-works-title"
           >
             How The Magic Happens
           </h2>
           <p 
-            className="text-lg text-foreground/70 max-w-2xl mx-auto"
+            className="text-lg text-[#4A5D4A] max-w-2xl mx-auto"
             data-testid="text-how-it-works-subtitle"
           >
             Creating your child's personalized storybook is simple and magical
@@ -65,12 +65,12 @@ export default function HowItWorksSection() {
             return (
               <Card 
                 key={step.id}
-                className="relative p-6 text-center bg-card/80 backdrop-blur-sm border-2 border-card-border hover-elevate transition-all duration-300 group"
+                className="relative p-6 text-center bg-white/90 backdrop-blur-sm border-2 border-[#E5D5C8]/50 hover-elevate transition-all duration-300 group rounded-2xl shadow-lg"
                 data-testid={`card-step-${step.id}`}
               >
                 {/* Step Number */}
                 <div 
-                  className="absolute -top-4 -right-4 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold"
+                  className="absolute -top-4 -right-4 w-8 h-8 bg-[#E17B47] text-white rounded-full flex items-center justify-center text-sm font-bold"
                   data-testid={`number-step-${step.id}`}
                 >
                   {step.id}
@@ -86,13 +86,13 @@ export default function HowItWorksSection() {
                 {/* Content */}
                 <div className="space-y-3">
                   <h3 
-                    className="text-lg font-semibold text-foreground"
+                    className="text-lg font-semibold text-[#2B4C6F]"
                     data-testid={`text-step-title-${step.id}`}
                   >
                     {step.title}
                   </h3>
                   <p 
-                    className="text-sm text-foreground/70 leading-relaxed"
+                    className="text-sm text-[#4A5D4A] leading-relaxed"
                     data-testid={`text-step-description-${step.id}`}
                   >
                     {step.description}
@@ -101,7 +101,7 @@ export default function HowItWorksSection() {
 
                 {/* Connecting Arrow (except for last item) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-primary/30">
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-[#E17B47]/40">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -115,15 +115,15 @@ export default function HowItWorksSection() {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <p 
-            className="text-foreground/70 mb-4"
+            className="text-[#4A5D4A] mb-4"
             data-testid="text-ready-message"
           >
             Ready to create your child's magical adventure?
           </p>
-          <div className="inline-flex items-center space-x-2 text-primary font-semibold">
-            <Heart className="h-5 w-5 text-pink-400 fill-current animate-pulse" />
+          <div className="inline-flex items-center space-x-2 text-[#E17B47] font-semibold">
+            <Heart className="h-5 w-5 text-[#F0A58E] fill-current animate-pulse" />
             <span data-testid="text-magic-message">Let's start the magic!</span>
-            <Heart className="h-5 w-5 text-pink-400 fill-current animate-pulse" />
+            <Heart className="h-5 w-5 text-[#F0A58E] fill-current animate-pulse" />
           </div>
         </div>
       </div>

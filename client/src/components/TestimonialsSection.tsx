@@ -51,17 +51,17 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/20" id="testimonials">
+    <section className="py-20 bg-gradient-to-b from-[#F0F8F7] to-[#F5F1E8]" id="testimonials">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 
-            className="text-4xl md:text-5xl font-heading text-primary mb-4"
+            className="text-4xl md:text-5xl font-heading text-[#2B4C6F] mb-4"
             data-testid="text-testimonials-title"
           >
             Happy Families
           </h2>
           <p 
-            className="text-lg text-foreground/70 max-w-2xl mx-auto"
+            className="text-lg text-[#4A5D4A] max-w-2xl mx-auto"
             data-testid="text-testimonials-subtitle"
           >
             See what parents and children are saying about their magical storybook adventures
@@ -72,11 +72,11 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.id}
-              className="relative p-6 bg-card/80 backdrop-blur-sm border-2 border-card-border hover-elevate transition-all duration-300"
+              className="relative p-6 bg-white/90 backdrop-blur-sm border-2 border-[#E5D5C8]/50 hover-elevate transition-all duration-300 rounded-2xl shadow-lg"
               data-testid={`card-testimonial-${index}`}
             >
               {/* Quote Icon */}
-              <Quote className="absolute top-4 right-4 h-8 w-8 text-primary/20" />
+              <Quote className="absolute top-4 right-4 h-8 w-8 text-[#E17B47]/30" />
               
               <div className="space-y-4">
                 {/* Rating */}
@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
 
                 {/* Quote */}
                 <blockquote 
-                  className="text-foreground/80 text-sm leading-relaxed"
+                  className="text-[#4A5D4A] text-sm leading-relaxed"
                   data-testid={`text-quote-${index}`}
                 >
                   "{testimonial.quote}"
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
                       />
                     ) : null}
                     <AvatarFallback 
-                      className="bg-primary/10 text-primary font-semibold text-sm"
+                      className="bg-[#E17B47]/10 text-[#E17B47] font-semibold text-sm"
                       data-testid={`text-avatar-fallback-${index}`}
                     >
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
@@ -112,13 +112,13 @@ export default function TestimonialsSection() {
                   
                   <div>
                     <div 
-                      className="font-semibold text-foreground text-sm"
+                      className="font-semibold text-[#2B4C6F] text-sm"
                       data-testid={`text-author-${index}`}
                     >
                       {testimonial.name}
                     </div>
                     <div 
-                      className="text-xs text-foreground/60"
+                      className="text-xs text-[#4A5D4A]"
                       data-testid={`text-child-${index}`}
                     >
                       Parent of {testimonial.childName}
